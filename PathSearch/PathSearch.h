@@ -38,47 +38,6 @@ namespace ufl_cap4053
 				};
 				//https://www.geeksforgeeks.org/stl-priority-queue-for-structure-or-class/
 				//https://stackoverflow.com/questions/15325730/priority-queue-of-custom-class-using-comparator-with-argument-on-constructor-in
-				//class CompareHeuristic {
-				//public:
-				//	double goalCoordinateX;
-				//	double goalCoordinateY;
-				//	double scale;
-				//	CompareHeuristic() {
-				//		goalCoordinateX = 0;
-				//		goalCoordinateY = 0;
-				//		scale = 0;
-				//	};
-				//	CompareHeuristic(double x, double y, double s) {
-				//		goalCoordinateX = x;
-				//		goalCoordinateY = y;
-				//		scale = s;
-				//	};
-				//	/*CompareHeuristic(double& x, double& y) {
-				//		goalCoordinateX = x;
-				//		goalCoordinateY = y;
-				//	};*/
-				//	bool operator()(Tile* const& p1, Tile* const& p2)
-				//	{
-				//		//int x1 = p1->getRow();
-				//		//int y1 = p1->getColumn();
-				//		//int x2 = p2->getRow();
-				//		//int y2 = p2->getColumn();
-				//		//double distance = sqrt(pow(x1 - goalCoordinateX, 2) + pow(y1 - goalCoordinateY, 2));
-				//		//double distance2 = sqrt(pow(x2 - goalCoordinateX, 2) + pow(y2 - goalCoordinateY, 2));
-				//		////greater than to get least to greatest
-				//		//return (distance - 50 * p1->getWeight()) > (distance2 - 50 * p2->getWeight());
-				//		double x1 = p1->getXCoordinate();
-				//		double y1 = p1->getYCoordinate();
-				//		double x2 = p2->getXCoordinate();
-				//		double y2 = p2->getYCoordinate();
-				//		double distance = sqrt(pow(x1 - goalCoordinateX, 2) + pow(y1 - goalCoordinateY, 2));
-				//		double distance2 = sqrt(pow(x2 - goalCoordinateX, 2) + pow(y2 - goalCoordinateY, 2));
-				//		//greater than to get least to greatest
-				//		return (distance + 0/2*p1->getWeight()) > (distance2 + 0/2*p2->getWeight());
-				//		//return (distance) < (distance2);
-
-				//	}
-				//};
 				double distance(double x, double y, Tile* t) {
 					double x1 = t->getXCoordinate();
 					double y1 = t->getYCoordinate();
