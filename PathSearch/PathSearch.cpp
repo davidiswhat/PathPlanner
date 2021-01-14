@@ -249,45 +249,7 @@ namespace ufl_cap4053
 				solution->push_back((*parents2)[current]);
 				current = (*parents2)[current];
 			}
-			//while (current != sTile) {
-			//	pair<int, int> p = (*parents)[current];;
-			//	if (p.first == -1) {
-			//		for (int k = 0; k < open2->size();k++) {
-			//			if (find((*searchGraph)[current].begin(), (*searchGraph)[current].end(), open2->at(k)) != (*searchGraph)[current].end()) {
-			//				current = open2->at(k);
-			//				//current->setFill(0x7F00FF00);
-			//				count1++;
-			//				solution->push_back(current);
-			//				break;
-			//			}
-			//		}
-			//	}
-			//	else {
-			//		current = tMap->getTile(p.first, p.second);
-			//		count2++;
-			//		solution->push_back(current);
-			//	}
-			//}
-
-			//while (current != sTile) {
-			//	pair<int,int> p = (*parents)[current];
-			//	if (p.first == -1) {
-			//		for (int k = 0; k < visited->size();k++) {
-			//			if (find((*searchGraph)[current].begin(), (*searchGraph)[current].end(), visited->at(k)) != (*searchGraph)[current].end()) {
-			//				current = visited->at(k);
-			//				//current->setFill(0x7F00FF00);
-			//				count1++;
-			//				solution->push_back(current);
-			//				break;
-			//			}
-			//		}
-			//	}
-			//	else {
-			//		count2++;
-			//		current = tMap->getTile(p.first, p.second);
-			//		solution->push_back(current);
-			//	}
-			//}
+			
 			return (*solution);
 		}
 
